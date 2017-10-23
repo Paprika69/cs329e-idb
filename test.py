@@ -73,7 +73,7 @@ def books(book_name):
 def authors(author_name):
 	if author_name == None:
 		authors = Authors.query.order_by(Authors.id).all()
-		return render_template('Authors.html', authors=authors)
+		return render_template('authors.html', authors=authors)
 	else:
 		author = Authors.query.filter_by(name=author_name).all()
 		if len(author) < 1:
