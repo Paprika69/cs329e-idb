@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from models import db, Books, Authors, Publishers
 from parser import parse_json
-from flask_table import Table, Col
 
 app = Flask(__name__)
 app.config.from_object('config')
