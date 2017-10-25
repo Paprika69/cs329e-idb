@@ -34,7 +34,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 1100px;
+    /*max-width: 1100px;*/
   }
 }
 .container-narrow > hr {
@@ -49,8 +49,14 @@ body {
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+  background-color:#02bdd5;
+  color:white;
+  border:none;
 }
-
+.jumbotron .btn:hover{
+    background-color:#5ED7E9;
+    border:none;
+}
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
