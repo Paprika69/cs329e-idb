@@ -1,0 +1,10 @@
+.table-content{
+
+}
+.table-content a{
+	text-decoration: none;
+	color:#444;
+}
+.table-content a:hover{
+	color:#999;
+}
