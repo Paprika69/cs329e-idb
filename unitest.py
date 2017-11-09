@@ -46,6 +46,7 @@ class DBTestCases(TestCase):
         self.session.add(self.author_3)
         self.session.add(self.publisher_1)
         self.session.add(self.publisher_2)
+        self.session.add(self.publisher_3)
         self.session.add(self.book_1)
         self.session.add(self.book_2)
         self.session.commit()
@@ -87,7 +88,10 @@ class DBTestCases(TestCase):
 
         self.session.commit()
 
-    # def test_publisher_2(self):
+    def test_publisher_2(self):
+        publisher_count=self.session.query(Publishers).count()
+        self.assertEqual(publisher_count,3)
+        self.session.commit()
 
     def test_book(self):
         result=self.session.query(Books).filter_by(title='Under the sea').one()
