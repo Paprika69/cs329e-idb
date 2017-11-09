@@ -26,6 +26,7 @@ def parse_json():
 			owner = publisher.get('owner', "")
 			publisher_image_url = publisher.get('image_url', "")
 			founded = publisher.get('founded', "")
+			# founded and location are not belonging to every publisheres
 			location = publisher.get('location', "")
 			publisher_website = publisher.get('website', "")
 			publishers_.append(Publishers(

@@ -24,6 +24,7 @@ association_authors_publishers = db.Table('authors_publishers',
 class Base(db.Model):
 	__abstract__ = True
 	id = db.Column(db.Integer, primary_key = True, autoincrement = True)
+# Base=declarative_base()
 
 class Publishers(Base):
 	__tablename__ = 'publishers'
