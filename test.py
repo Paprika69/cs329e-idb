@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 from models import db, Books, Authors, Publishers
 from parser import parse_json
+import json
+import subprocess
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -92,5 +94,10 @@ def publishers(publisher_name):
 			return render_template('publisher_not_found.html', publisher_name=publisher_name)
 		return render_template('publisher.html', publisher=publisher[0])
 
+@app.route('/unit_tests')
+def unit_tests():
+	output = subprocess.getoutput("python unitest.py")
+	return json.dumps({'output': str(output)})
+
 if __name__ == '__main__':
-	app.run(debug=True);
+	app.run(debug=True)

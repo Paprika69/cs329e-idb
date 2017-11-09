@@ -3,6 +3,8 @@ from models import  Base, Books, Publishers, Authors
 from sqlalchemy.orm import sessionmaker
 from test import app
 from sqlalchemy import create_engine
+from flask import Flask
+import os
 
 # def setup_module():
 #     global engine, transaction, connection
@@ -10,19 +12,26 @@ from sqlalchemy import create_engine
 #     connection=engine.connect()
 #     transaction=connection.begin()
 #     Base.metadata.create_all(connection)
+
+
 class DBTestCases(TestCase):
-    engine=create_engine('postgresql://postgres:Kaijuan@localhost/bookdb')
+    DB_PATH = os.path.join(os.path.dirname(__file__), 'book_test.db')
+    SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'sqlite:///{}'.format(DB_PATH))
+    engine=create_engine(SQLALCHEMY_DATABASE_URI)
+
     Session=sessionmaker(bind=engine)
     session=Session()
 
     def setUp(self):
         Base.metadata.drop_all(self.engine)
         Base.metadata.create_all(self.engine)
+
         self.author_1=Authors(name='Nason Alex',born='1943-03-26',nationality='American',education='Yale University, BA, 1965',description='investigative journalist',wikipedia_url='https://en.wikipedia.org/wiki/Bob_Woodward',image_url='http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Bob_Woodward.jpg/220px-Bob_Woodward.jpg')
         self.author_2=Authors(name='Patrick Rothfuss',born='1994-08-13',nationality='Chinese',image_url="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Patrick-rothfuss-2014-kyle-cassidy.jpg/250px-Patrick-rothfuss-2014-kyle-cassidy.jpg")
         self.author_3=Authors(name='Robin Hortz',nationality='Australian',born='1952-03-05')
         self.publisher_1=Publishers(name='Simon & Schuster',founded='1924',wikipedia_url= "https://en.wikipedia.org/wiki/Simon_%26_Schuster",website= "http://www.simonandschuster.com")
         self.publisher_2=Publishers(name='HarperCollins',founded='1989',location='New York',website='http://harpercollins.com')
+        self.publisher_3=Publishers(name='Penguin Group',founded='1935',location='City of Westminster, London')
 
         self.book_1=Books(title='Royal Assassin',google_id='kx12345',publication_date='2003-04-05')
         self.book_1.authors.append(self.author_3)
@@ -60,31 +69,54 @@ class DBTestCases(TestCase):
 
         self.session.commit()
 
+    def test_author_3(self):
+        author_count_before=self.session.query(Authors).count()
+        # self.assertEqual(author_count_before,3)
+        self.author_4=Authors(name='Orson Scott Card',born='1950',nationality='American',wikipedia_url='https://en.wikipedia.org/wiki/Orson_Scott_Card')
+        self.session.add(self.author_4)
+
+        author_count_now=self.session.query(Authors).count()
+        self.assertEqual(author_count_now,author_count_before+1)
+
+        self.session.delete(self.author_4)
+        self.session.commit()
+
     def test_publisher(self):
         publisher_result=self.session.query(Publishers).filter_by(founded="1924").one()
         self.assertEqual(str(publisher_result.name),'Simon & Schuster')
 
         self.session.commit()
+
+    # def test_publisher_2(self):
+
     def test_book(self):
         result=self.session.query(Books).filter_by(title='Under the sea').one()
         self.assertEqual(str(result.google_id),'34567')
         self.session.commit()
 
+
     def test_book_author(self):
         result=self.session.query(Books).filter_by(title='Royal Assassin').one()
         self.assertEqual(str(result.authors[0].nationality),'Australian')
 
+        self.session.delete(self.book_1)
+        self.session.delete(self.author_3)
         self.session.commit()
-    
+
     def test_book_publisher(self):
         result=self.session.query(Books).filter_by(title='Under the sea').one()
         self.assertEqual(str(result.publishers[0]),'Simon & Schuster')
 
+        self.session.delete(self.book_2)
+        self.session.delete(self.publisher_1)
         self.session.commit()
 
     def test_author_publisher(self):
         result=self.session.query(Authors).filter_by(name='Patrick Rothfuss').one()
         self.assertEqual(str(result.publishers[0]),'HarperCollins')
+
+        self.session.delete(self.author_2)
+        self.session.delete(self.publisher_2)
         self.session.commit()
 
 

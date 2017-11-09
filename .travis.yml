@@ -17,4 +17,4 @@ before_script:
     - psql -c 'create database bookdb;' -U postgres
 
 script:
-    - python test.py
+    - python unitest.py

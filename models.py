@@ -1,6 +1,23 @@
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import relationship
+from flask import Flask
+from sqlalchemy.orm import relationship,sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
+
+''''
+create engines for the db instance
+
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Kaijuan@localhost/bookdb'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
+Session = sessionmaker(bind=engine)
+'''
+
+'''
+create the db structures
+'''
 
 db = SQLAlchemy()
 
@@ -28,14 +45,14 @@ class Base(db.Model):
 
 class Publishers(Base):
 	__tablename__ = 'publishers'
-	name = db.Column(db.String(30), unique=True)
+	name = db.Column(db.String(300), unique=True)
 	wikipedia_url = db.Column(db.String(300))
-	description = db.Column(db.String(500))
-	owner = db.Column(db.String(30))
-	founded = db.Column(db.String(10))
-	location = db.Column(db.String(20))
+	description = db.Column(db.String(1000))
+	owner = db.Column(db.String(300))
+	founded = db.Column(db.String(100))
+	location = db.Column(db.String(200))
 	image_url = db.Column(db.String(300))
-	website = db.Column(db.String(300))
+	website = db.Column(db.String(500))
 
 	def __repr__(self):
 		return self.name
