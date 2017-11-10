@@ -97,11 +97,6 @@ def publishers(publisher_name):
 @app.route('/unit_tests')
 def unit_tests():
 	output = subprocess.getoutput("python unitest.py")
-	# data=json_dumps({'out_put':str(output)})
-	# with open("test.txt",'w') as output_file:
-	# 	json.dump(data,output_file)
-	# return render_template('unit_tests.html')
-
 	return json.dumps({'output': str(output)})
 
 if __name__ == '__main__':
