@@ -1,3 +1,77 @@
+commit 30e267680b5a6158418cd07f89597b67f0d7df16
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Thu Nov 9 17:00:49 2017 -0600
+
+    1
+
+commit 4fd17ae062b85115735cbcdc9fdf790613cdd83d
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 16:49:23 2017 -0600
+
+    change the about html and add unit tests
+
+commit 3634e91c096a634fec7a8f3918a4a6856f732fda
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 16:02:09 2017 -0600
+
+    1
+
+commit f7d08a9021bb7f515b8b19d4f0a842081fbbe7c3
+Merge: 6629e2c e8cb577
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 16:01:22 2017 -0600
+
+    1
+
+commit 6629e2ce3b36bba802368d2404d601c3f39ffeee
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:55:32 2017 -0600
+
+    add workspace.xml file
+
+commit c57d91cb43e96376f137c42928cd671c9c0cf368
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:54:41 2017 -0600
+
+    add the config.py file
+
+commit b176401fb3fc057fba6370b19e94335022d49652
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:52:37 2017 -0600
+
+    add unknown system file
+
+commit 0ea35b789778665e5acc35e159ae5e36a26b151e
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:50:59 2017 -0600
+
+    [KX-1109 change the unit test database to sqllite]
+
+commit e8cb577b8443245aea7acc707a0431e1d4dd76db
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Thu Nov 9 12:13:54 2017 -0600
+
+    add img
+
+commit 02bceb9a00cab4b1c9a17554853b7bf1d5fdae0c
+Merge: 7262104 4b34923
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Thu Nov 9 10:49:09 2017 -0600
+
+    Merge branch 'master' of https://github.com/Paprika69/cs329e-idb
+
+commit 726210472385370bd80fdcc7aab713d9390008cb
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Thu Nov 9 09:29:05 2017 -0600
+
+    add some png file
+
+commit 4b349234e16eb49246bfd6adb0ce68cd85d3bd00
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Wed Nov 8 22:16:16 2017 -0600
+
+    [KX-1108 update requirements file with psycopg2, add make file and travis.yml]
+
 commit 8fb582a02c53dc7069286c1c06201b6494e6c276
 Author: Kaijuan <xingkj@utexas.edu>
 Date:   Wed Nov 8 20:58:02 2017 -0600
