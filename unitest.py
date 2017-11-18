@@ -122,7 +122,69 @@ class DBTestCases(TestCase):
         self.session.delete(self.author_2)
         self.session.delete(self.publisher_2)
         self.session.commit()
+    def test_delete_books_1(self):
+        self.session.add(Books(title='1999',google_id='34167',publication_date='2017-04-21'))
+        self.session.commit()
 
+        query = self.session.query(Books).filter_by(title ="1999").first()
+
+        self.assertTrue(str(query.title),"1999")
+        self.session.query(Books).filter_by(title='1999').delete()
+        self.session.commit()
+        number = self.session.query(Books).filter_by(title='1999').count()
+        self.assertTrue(str(number),"0")
+    def test_delete_authors(self):
+        self.session.add(Authors(name='Benjamin',born='1998-08-13',nationality='Chinese',image_url="http://upload.wikimedia.org/wikipedia/commons/thumbs/"))
+        self.session.commit()
+
+        query = self.session.query(Authors).filter_by(born ="1998-08-13").first()
+
+        self.assertTrue(query.born,"1998-08-13")
+        self.session.query(Authors).filter_by(born ="1998-08-13").delete()
+        self.session.commit()
+        number = self.session.query(Authors).filter_by(born ="1998-08-13").count()
+        self.assertTrue(str(number),"0")
+    def test_delete_publishers(self):
+        self.session.add(Publishers(name='Renmin Chubanshe',founded='1855',wikipedia_url= "https://en.wikipedia.org/wiki/"))
+
+        query = self.session.query(
+            Publishers).filter_by(
+            founded="1855").first()
+
+        self.assertTrue(query.founded,"1855")
+        self.assertTrue(query.name, "Renmin Chubanshe")
+        self.session.query(Publishers).filter_by(
+            founded="1855").delete()
+        self.session.commit()
+        number = self.session.query(
+            Publishers).filter_by(
+            founded="1855").count()
+        self.assertTrue(str(number), "0")
+    # test filtering multiple publishers which shares the same attributes
+    def test_publishers_2(self):
+        self.session.add(Publishers(name="Tencent", founded="1998",wikipedia_url="www.qq.com" ))
+        self.session.add(Publishers(name="Thunder", founded = "1998",wikipedia_url="www.thunder.com"))
+        self.session.commit()
+        query = self.session.query(Publishers).filter_by(founded = "1998").all()
+        foundeds = []
+        for i in query:
+            foundeds.append(i.founded)
+        self.assertTrue(foundeds[0]== foundeds[1])
+        self.session.query(Publishers).filter_by(founded = "1998").delete()
+        self.session.query(Publishers).filter_by(founded = "1998").delete()
+        self.session.commit()
+
+
+    def test_books_update(self):
+        self.session.add(Authors(name="Paprika Jiang",born = "1924-02-14",nationality='American',education='Yale University, BA, 1965'))
+        self.session.query(Authors).filter_by(name='Paprika Jiang').update({'nationality': 'Chinese'},
+            synchronize_session=False)
+        self.session.commit()
+        result = self.session.query(Authors).filter_by(name='Paprika Jiang').one()
+        self.assertTrue(result.nationality,'Chinese')
+        self.session.query(Authors).filter_by(name ="Paprika Jiang").delete()
+
+        self.session.commit()
 
 
 if __name__=='__main__':
