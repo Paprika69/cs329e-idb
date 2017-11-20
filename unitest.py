@@ -186,6 +186,16 @@ class DBTestCases(TestCase):
 
         self.session.commit()
 
+    def test_publishers_update(self):
+        self.session.add(Publishers(name="GroupStars", founded="1998",wikipedia_url="www.star.com" ))
+        self.session.query(Publishers).filter_by(name='GroupStars').update({'founded': '1999'},
+            synchronize_session=False)
+        self.session.commit()
+        result = self.session.query(Publishers).filter_by(name='GroupStars').one()
+        self.assertTrue(result.founded,'1999')
+        self.session.query(Authors).filter_by(name ="GroupStars").delete()
+        self.session.commit()
+
 
 if __name__=='__main__':
     main()
