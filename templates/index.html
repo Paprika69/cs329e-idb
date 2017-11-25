@@ -1,191 +1,364 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Home Page</title>
-        <!-- Basic Page Needs
-        ================================================== -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <!--<link rel="icon" type="image/png" href="../static/images/favicon.png">-->
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <!-- Mobile Specific Metas
-        ================================================== -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="../static/css/ionicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="../static/css/animate.css">
-        <!-- Hero area slider css-->
-        <link rel="stylesheet" href="../static/css/slider.css">
-        <!-- owl craousel css -->
-        <link rel="stylesheet" href="../static/css/owl.carousel.css">
-        <link rel="stylesheet" href="../static/css/owl.theme.css">
-        <link rel="stylesheet" href="../static/css/jquery.fancybox.css">
-        <!-- template main css file -->
-        <link rel="stylesheet" href="../static/css/main.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" href="../static/css/responsive.css">
-        
-        <!-- Template Javascript Files
-        ================================================== -->
-        <!-- modernizr js -->
-        <script src="../static/js/vendor/modernizr-2.6.2.min.js"></script>
-        <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- owl carouserl js -->
-        <script src="../static/js/owl.carousel.min.js"></script>
-        <!-- bootstrap js -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Boooks</title>
+	<link rel="shortcut icon" href="../static/images/icon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
 
-        <script src="../static/js/bootstrap.min.js"></script>
-        <!-- wow js -->
-        <script src="../static/js/wow.min.js"></script>
-        <!-- slider js -->
-        <script src="../static/js/slider.js"></script>
-        <script src="../static/js/jquery.fancybox.js"></script>
-        <!-- template main js -->
-        <script src="../static/js/main.js"></script>
+	<!--
+		Oxygen by gettemplates.co
+		Twitter: http://twitter.com/gettemplateco
+		URL: http://gettemplates.co
+	-->
 
-</head>
-<body>
-        <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
-        <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-                    <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="/index" >
-                            <img src="../static/images/logo.png" style="height:54px;width:240px; position:relative; top:-15px; left:0px;" alt="">
-                        </a>
-                    </div>
-                    <!-- /logo -->
-                </div>
-                <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="index" >Home</a>
-                            </li>
-                            <li><a href="books">Books</a></li>
-                            <li><a href="authors">Authors</a></li>
-                            <li><a href="publishers">Publishers</a></li>
-                            <li><a href="about">About</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- /main nav -->
-            </div>
-        </header>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../static/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="../static/css/icon_animation.css">
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+	<nav id="particles-js" class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="gtco-logo"><a href="index">Boooks</a></div>
+				</div>
+				<div class="col-xs-8 text-center menu-1">
+					<ul>
+						<li class="active"><a href="index">Home</a>
+                        </li>
+                        <li><a href="books">Books</a></li>
+                        <li><a href="authors">Authors</a></li>
+                        <li><a href="publishers">Publishers</a></li>
+                        <li><a href="about">About</a></li>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-2 text-right hidden-xs menu-2">
+					<span><a href="/index"><img class="toprighticon" src="../static/images/icon2.gif" style="width:40px"></a></span>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(../static/images/img_bg_1.jpg);">
+		<div class="gtco-container">
+			<div  class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>boooks</h1>
+							<h2>more than books</h2>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="gtco-testimonial">
+		<div class="gtco-container">
+			<!-- <div class="row"> -->
+				<div class="row animate-box">
+<!-- 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Testimonial</h2>
+					</div> -->
+				</div>
+				<div class="row animate-box">
+					<div class="owl-carousel owl-carousel-fullwidth ">
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<figure>
+									<img src="../static/images/go.jpg" alt="user">
+								</figure>
+								<span><a href="/authors/George Orwell">George Orwell</a>, <i><a href="/books/1984">1984</a></i></span>
+								<blockquote>
+									<p>&ldquo;Power is in tearing human minds to pieces and putting them together again in new shapes of your own choosing.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<figure>
+									<img src="../static/images/sh.jpg" alt="user">
+								</figure>
+								<span><a href="/authors/Stephen%20Hawking">Stephen Hawking</a>, <i><a href="/books/A%20Brief%20History%20of%20Time">A Brief History of Time</a></i></span>
+								<blockquote>
+									<p>&ldquo;The increase of disorder or entropy is what distinguishes the past from the future, giving a direction to time.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<figure>
+									<img src="../static/images/cd.jpg" alt="user">
+								</figure>
+								<span><a href="/authors/Charles%20Darwin">Charles Darwin</a>, <i><a href="/books/The%20Origin%20of%20Species">The Origin of Species</a></i></span>
+								<blockquote>
+									<p>&ldquo;One general law, leading to the advancement of all organic beings, namely, multiply, vary, let the strongest live and the weakest die.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<figure>
+									<img src="../static/images/ws.jpg" alt="user">
+								</figure>
+								<span><a href="/authors/William%20Shakespeare">William Shakespeare</a>, <i><a href="/books/Romeo%20and%20Juliet">Romeo and Juliet</a></i></span>
+								<blockquote>
+									<p>&ldquo;My bounty is as boundless as the sea,
+									My love as deep; the more I give to thee,
+									The more I have, for both are infinite.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</div>
 
 
-        <!--
-        ==================================================
-        Slider Section Start
-        ================================================== -->
-        <section id="hero-area" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="block wow fadeInUp" data-wow-delay=".3s">
-
-                            <!-- Slider -->
-                            <section class="cd-intro">
-                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                                <span>HI, HERE YOU CAN SEARCH</span><br>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">BOOKS</b>
-                                    <b>AUTHORS</b>
-                                    <b>PUBLISHERS</b>
-                                </span>
-                                </h1>
-                                </section> <!-- cd-intro -->
-                                <!-- /.slider -->
-                                <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-
-                                    BOOKS START HERE CHANGED THE WORLD!
-                                </h2>
-                                 <a  class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green" data-wow-delay=".9s" href="books">Start</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!--/#main-slider-->
 
 
-            <!--
-            ==================================================
-            Slider Section Start
-            ================================================== -->
-        <div style="background-color:red;" width="100%" height="100px"></div>
-            <section id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <h2>
-                                ABOUT OUR GROUP
-                                </h2>
-                                <p>
-                                    Hello, we're group Five Guys from UT Austin.We are five guys including four masters and an undergrad. Overall, we have 6 years experience of software development. The team members are Infromation professionals from iSchool, who provide their special insights from the their research experience with information users. One of our member comes from Electrical Engineer background, he is mostly responsible for providing solid technical solutions. Our undergrad member majors in Mathatics and he brings interesting ideas to apply.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <img src="../static/images/about/about.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
 
-        <!--==================================================-->
-        <!--Footer Section Start-->
-        <!--================================================== -->
-        <footer id="footer">
-            <div class="container">
-                <div class="col-md-6">
-                    <p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a href="https://github.com/Paprika69/cs329e-idb/tree/master">CS329e-Five Guys</a></p>
-                    <!--<img src="../static/images/giticon.png" width="20px" height="20px">-->
-                </div>
-                <div class="col-md-6">
-                    <!-- Social Media -->
-                    <ul class="social">
-                        <li>
-                            <a href="https://github.com/Paprika69/cs329e-idb/tree/master">
+	<div id="gtco-counter" class="gtco-bg gtco-counter" style="background-image:url(../static/images/img_bg_2.jpg);">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-book"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="151" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Books</span>
+
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-feather"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="73" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Authors</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-printer"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="47" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Publishers</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-eye"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="999" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Readers</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div id="gtco-features-2">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>About This Site</h2>
+					<p>A place that navigates you through books, authors, publishers, and much more...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<br>
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Content Ready</h3>
+							<p>Endless resource pre-cached with sorting and searching functions enabled</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Fully Responsive</h3>
+							<p>Hassle-free access through all devices, all platforms, anywhere, anytime</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>All About Experience</h3>
+							<p>Optimized browsing experience from backend processing &nbsp to frontend design</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="gtco-video gtco-bg" style="background-image: url(../static/images/bg1.jpg);">
+						</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="gtco-started">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Look For</h2>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-12">
+					<form class="form-inline">
+						<div class="col-md-4 col-sm-4">
+							<a href="books"><button type="submit" class="btn btn-default btn-block">Books</button></a>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<a href="authors"><button type="submit" class="btn btn-default btn-block">Authors</button></a>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<a href="publishers"><button type="submit" class="btn btn-default btn-block">Publishers</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; <span>2017</span> Developed by <a href="https://github.com/Paprika69/cs329e-idb/tree/master">CS329E-Boooks</a></small> 
+					</p>
+					<!-- <p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li>
+								<a href="https://github.com/Paprika69/cs329e-idb/tree/master">
                                 <img src="../static/images/giticon.png" width="20px" height="20px">
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer> <!-- /#footer -->
+							</li>
+						</ul>
+					</p> -->
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="../static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../static/js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="../static/js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="../static/js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="../static/js/jquery.magnific-popup.min.js"></script>
+	<script src="../static/js/magnific-popup-options.js"></script>
 
 
+	<script src="../static/js/particles.js"></script>
 
+	<script>
+		particlesJS.load('particles-js', '../static/js/particles.json', function() {
+  		console.log('callback - particles.js config loaded');
+		});
+	</script>
 
-</body>
+	<!-- Main -->
+	<script src="../static/js/main.js"></script>
+
+	</body>
 </html>
+

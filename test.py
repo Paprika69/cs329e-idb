@@ -4,6 +4,7 @@ from parser import parse_json
 import json
 import subprocess
 
+
 app = Flask(__name__)
 app.config.from_object('config')
 
