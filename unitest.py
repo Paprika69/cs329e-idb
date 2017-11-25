@@ -196,6 +196,15 @@ class DBTestCases(TestCase):
         self.session.query(Authors).filter_by(name ="GroupStars").delete()
         self.session.commit()
 
+    def test_books_insert(self):
+        self.session.add(Books(title='Nothing to Envy',google_id='0385523912',publication_date='2009-12-29'))
+        self.session.commit()
+        result = self.session.query(Books).filter_by(title='Nothing to Envy').one()
+        self.assertEqual(str(result.google_id), '0385523912')
+        self.assertEqual(str(result.publication_date), '2009-12-29')
+        self.session.query(Books).filter_by(title='Nothing to Envy').delete()
+        self.session.commit()
+
 
 if __name__=='__main__':
     main()
