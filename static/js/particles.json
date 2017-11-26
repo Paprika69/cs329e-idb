@@ -4,7 +4,7 @@
       "value": 18,
       "density": {
         "enable": true,
-        "value_area": 500
+        "value_area": 400
       }
     },
     "color": {
@@ -50,7 +50,7 @@
       "distance": 260,
       "color": "#ffffff",
       "opacity": 0.4,
-      "width": 1.4
+      "width": 1.2
     },
     "move": {
       "enable": true,
@@ -72,7 +72,7 @@
     "events": {
       "onhover": {
         "enable": false,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": false,
