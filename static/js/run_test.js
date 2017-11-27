@@ -16,7 +16,7 @@ $(document).ready(function()
                     document.getElementsByClassName("title")[0].innerHTML = "Done!";
                     var a = document.createElement('a');
                     var img = document.createElement("img");
-                    img.height = "80";
+                    img.height = "60";
                     img.src = "../static/images/ok_button.png";
                     a.setAttribute('href', "/about");
                     a.appendChild(img);
