@@ -1,8 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Response
 from models import db, Books, Authors, Publishers
 from parser import parse_json
+from io import StringIO
+import time
 import json
 import subprocess
+import unitest
+import unittest
 
 
 app = Flask(__name__)
@@ -95,10 +99,42 @@ def publishers(publisher_name):
 			return render_template('publisher_not_found.html', publisher_name=publisher_name)
 		return render_template('publisher.html', publisher=publisher[0])
 
-@app.route('/unit_tests')
-def unit_tests():
-	output = subprocess.getoutput("python unitest.py")
-	return json.dumps({'output': str(output)})
+# @app.route('/unit_tests')
+# def unit_tests():
+# 	output = subprocess.getoutput("python unitest.py")
+# 	return json.dumps({'output': str(output)})
+
+@app.route('/tests')
+def tests():
+	return render_template('tests.html')
+
+@app.route('/progress')
+def progress():
+
+	return Response(run_tests(), mimetype='text/event-stream')
+
+def run_tests():
+	suite = unittest.TestLoader().loadTestsFromTestCase(unitest.DBTestCases)
+	stream=StringIO()
+	testResult = unittest.TextTestRunner(stream,verbosity=2).run(suite)
+	results = stream.getvalue().split("\n")
+	# data = "event:progress\n"
+	# for result in results:
+	# 	data += "data:"
+	# 	data += result
+	# 	data += "<br>"
+	# 	data += "\n"
+	# data += "\n"
+	# yield data
+	for i in range(4):
+		results[-6] += "<br>"
+		results[-6] += results[i-5-1]
+	results = results[:-5]
+	for result in results:
+		time.sleep(0.2)
+		yield "event:progress\ndata:{data}\n\n".format(data=result)
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
+
