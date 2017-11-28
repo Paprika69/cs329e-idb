@@ -1,7 +1,6 @@
 from unittest import TestCase, main
 from models import  Base, Books, Publishers, Authors
 from sqlalchemy.orm import sessionmaker
-from test import app
 from sqlalchemy import create_engine
 from flask import Flask
 import os
