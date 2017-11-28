@@ -7,8 +7,9 @@ window.onkeydown = function(e) {
 
 $(document).ready(function()
     {
+        console.log("new loop");
         var source = new EventSource("/progress");
-        source.addEventListener('progress', function(event)
+        source.onmessage = function(event)
             {
                 document.getElementsByClassName("text")[0].innerHTML = event.data;
                 if (event.data.includes("<br>")) {
@@ -25,6 +26,6 @@ $(document).ready(function()
 
                 }
             }, false
-        );
+        
     }
 );

@@ -110,7 +110,6 @@ def tests():
 
 @app.route('/progress')
 def progress():
-
 	return Response(run_tests(), mimetype='text/event-stream')
 
 def run_tests():
@@ -131,10 +130,11 @@ def run_tests():
 		results[-6] += results[i-5-1]
 	results = results[:-5]
 	for result in results:
-		time.sleep(0.2)
-		yield "event:progress\ndata:{data}\n\n".format(data=result)
+		time.sleep(5)
+		yield "data:{data}\n\n".format(data=result)
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.debug = True
+	app.run(threaded=True)
 
