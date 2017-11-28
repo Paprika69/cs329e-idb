@@ -107,7 +107,7 @@
         BG_CLOUD_SPEED: 0.2,
         BOTTOM_PAD: 10,
         CLEAR_TIME: 100,
-        CLOUD_FREQUENCY: 0.7,
+        CLOUD_FREQUENCY: 1,
         GAMEOVER_CLEAR_TIME: 750,
         GAP_COEFFICIENT: 0.6,
         GRAVITY: 0.6,
@@ -2521,7 +2521,7 @@
     Horizon.config = {
         BG_CLOUD_SPEED: 0.2,
         BUMPY_THRESHOLD: .3,
-        CLOUD_FREQUENCY: .5,
+        CLOUD_FREQUENCY: 0.9,
         HORIZON_HEIGHT: 16,
         MAX_CLOUDS: 6
     };

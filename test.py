@@ -130,7 +130,7 @@ def run_tests():
 		results[-6] += results[i-5-1]
 	results = results[:-5]
 	for result in results:
-		time.sleep(5)
+		time.sleep(2)
 		yield "data:{data}\n\n".format(data=result)
 
 
