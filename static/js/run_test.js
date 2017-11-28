@@ -7,7 +7,6 @@ window.onkeydown = function(e) {
 
 $(document).ready(function()
     {
-        console.log("new loop");
         var source = new EventSource("/progress");
         source.onmessage = function(event)
             {
