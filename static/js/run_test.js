@@ -11,6 +11,7 @@ $(document).ready(function()
         var source = new EventSource("/progress");
         source.onmessage = function(event)
             {
+                console.log(event.data);
                 document.getElementsByClassName("text")[0].innerHTML = event.data;
                 if (event.data.includes("<br>")) {
                     event.target.close();
