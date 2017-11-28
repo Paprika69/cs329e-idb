@@ -129,9 +129,11 @@ def run_tests():
 		results[-6] += "<br>"
 		results[-6] += results[i-5-1]
 	results = results[:-5]
+	s = ""
 	for result in results:
-		time.sleep(0.6)
-		yield "data:{data}\n\n".format(data=result)
+		# time.sleep(0.2)
+		s += result + "<br>"
+		yield "id:{all}\ndata:{data}\n\n".format(all=1,data=result)
 
 
 if __name__ == '__main__':

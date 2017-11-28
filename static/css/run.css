@@ -8,6 +8,11 @@ html, body {
   height: 100%;
 }
 
+.shadow {
+    -webkit-filter: drop-shadow(0 0px 8px #ddd);
+    filter: drop-shadow(0 0px 8px #ddd);
+}
+
 .icon {
   -webkit-user-select: none;
   user-select: none;
