@@ -1,0 +1,535 @@
+commit f59f3cfd02124ca7897ee760c4539fcd08713f92
+Author: Paprika69 <joyjiang69@outlook.com>
+Date:   Tue Nov 28 16:25:15 2017 -0600
+
+    Added presentation link
+
+commit a4480daf00ebc0d3bb2bb380791e9cfa37a4171a
+Author: Paprika69 <joyjiang69@outlook.com>
+Date:   Tue Nov 28 15:54:19 2017 -0600
+
+    Added coverages out
+
+commit 494e45dd857ca392dc3f18f70d98105be6539f0a
+Author: skzhou <zhoushengke123@gmail.com>
+Date:   Tue Nov 28 15:31:51 2017 -0600
+
+    Delete book_test.db
+
+commit da9a1fde2a704150f9c0981b9452199b161a808e
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Tue Nov 28 15:04:03 2017 -0600
+
+    5
+
+commit eb15104d399db4ec6cc97fcd058c94d7f7f8a2d1
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 23:25:09 2017 -0600
+
+    4
+
+commit ff564816b61b426cc61361886bfff5278a080c74
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 21:02:24 2017 -0600
+
+    3
+
+commit 191e077ab4d2d73bf368c4eb5b65339982873cb3
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 20:29:18 2017 -0600
+
+    4
+
+commit fe5eb09629e79ee2f2e1f5864688cd18307fd182
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 20:01:18 2017 -0600
+
+    3
+
+commit d46860713e5311726805f79378e94cde50ceab14
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 19:59:55 2017 -0600
+
+    4
+
+commit 99cf4d6dc80f946cf28e7b4e3ed21e855272757c
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 18:16:33 2017 -0600
+
+    3
+
+commit f3796fe31eee2e516f89291dfb1fb895c841be02
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 17:58:29 2017 -0600
+
+    3
+
+commit f0ce8a94b2ae8684f7f650a316d0765f11d02576
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Nov 27 17:57:30 2017 -0600
+
+    3
+
+commit 6c2e2c0884da16764246d24bf50dd5c258dc8bb3
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Sun Nov 26 14:31:13 2017 -0600
+
+    2
+
+commit 5fdde02ae564a9516959619a208f54a40f123d1b
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Sat Nov 25 17:29:21 2017 -0600
+
+    new templates
+
+commit 5fd469205ad73214a31ffcea66383e393ff90870
+Author: Paprika69 <joyjiang69@outlook.com>
+Date:   Sat Nov 25 15:16:38 2017 -0600
+
+    add more test cases
+
+commit 7a842ccfe11e296ba76d773f8eaf8e0228468cf9
+Author: xin su <x.su@utexas.edu>
+Date:   Mon Nov 20 14:55:05 2017 -0600
+
+    unittest
+
+commit d74884aab1fa53a5488c07c5124b1bfd2e7829b7
+Author: xin su <x.su@utexas.edu>
+Date:   Mon Nov 20 13:24:20 2017 -0600
+
+    logo update
+
+commit 2d5a95fded594d82fa7d03886ced527df09157c1
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Sat Nov 18 15:17:16 2017 -0600
+
+    ignore book_test.db
+
+commit 6b840e681f7e0e64bfa957e34969cd50b1011855
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Sat Nov 18 15:14:31 2017 -0600
+
+    add some unitest
+
+commit ea63e45bd240b53fb3a64ae043cbcc97b8c13e02
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 19:28:40 2017 -0600
+
+    test py
+
+commit 993390ef004fc4a7e9e9de54db18a2d377667c71
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 19:26:27 2017 -0600
+
+    updata git log and kx's image:)
+
+commit 30e267680b5a6158418cd07f89597b67f0d7df16
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Thu Nov 9 17:00:49 2017 -0600
+
+    1
+
+commit 4fd17ae062b85115735cbcdc9fdf790613cdd83d
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 16:49:23 2017 -0600
+
+    change the about html and add unit tests
+
+commit 3634e91c096a634fec7a8f3918a4a6856f732fda
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 16:02:09 2017 -0600
+
+    1
+
+commit f7d08a9021bb7f515b8b19d4f0a842081fbbe7c3
+Merge: 6629e2c e8cb577
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 16:01:22 2017 -0600
+
+    1
+
+commit 6629e2ce3b36bba802368d2404d601c3f39ffeee
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:55:32 2017 -0600
+
+    add workspace.xml file
+
+commit c57d91cb43e96376f137c42928cd671c9c0cf368
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:54:41 2017 -0600
+
+    add the config.py file
+
+commit b176401fb3fc057fba6370b19e94335022d49652
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:52:37 2017 -0600
+
+    add unknown system file
+
+commit 0ea35b789778665e5acc35e159ae5e36a26b151e
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Nov 9 15:50:59 2017 -0600
+
+    [KX-1109 change the unit test database to sqllite]
+
+commit e8cb577b8443245aea7acc707a0431e1d4dd76db
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Thu Nov 9 12:13:54 2017 -0600
+
+    add img
+
+commit 02bceb9a00cab4b1c9a17554853b7bf1d5fdae0c
+Merge: 7262104 4b34923
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Thu Nov 9 10:49:09 2017 -0600
+
+    Merge branch 'master' of https://github.com/Paprika69/cs329e-idb
+
+commit 726210472385370bd80fdcc7aab713d9390008cb
+Author: yang zhong <yang.zhong@utexas.edu>
+Date:   Thu Nov 9 09:29:05 2017 -0600
+
+    add some png file
+
+commit 4b349234e16eb49246bfd6adb0ce68cd85d3bd00
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Wed Nov 8 22:16:16 2017 -0600
+
+    [KX-1108 update requirements file with psycopg2, add make file and travis.yml]
+
+commit 8fb582a02c53dc7069286c1c06201b6494e6c276
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Wed Nov 8 20:58:02 2017 -0600
+
+    [KX-1108] add unit test cases
+
+commit d67707742c4b1359d0905179ccec78af3fcaa4de
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Oct 26 21:48:10 2017 -0500
+
+    [KX-1026 add git log]
+
+commit 5739d231bc3ff408122ebb96622f9fbd6d1cf8c5
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Oct 26 21:16:04 2017 -0500
+
+    [KX-1026 final changes to all commit times and issue numbers]
+
+commit 92abee98d012cb5d7f81570086cca1e79a64a283
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Thu Oct 26 20:22:20 2017 -0500
+
+    [KX-1026] changes the commit times and issue numbers
+
+commit 3785198ca3e0741c43413ae4d027fcca2884e9cc
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Thu Oct 26 14:06:02 2017 -0500
+
+    6
+
+commit accb9867ec4459efd3000f0526d034d70a433432
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Thu Oct 26 10:37:02 2017 -0500
+
+    6
+
+commit 1cc56f4db5dd756f1d6680b89b14c472be77c737
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 23:38:04 2017 -0500
+
+    publishers
+
+commit 747942a50e3240ad0194997f4997224b10d4dfed
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 23:32:01 2017 -0500
+
+    start
+
+commit 6f444d42c2cb5268d399bee796e5af0fb9b068b9
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 23:30:29 2017 -0500
+
+    last push
+
+commit b924e4ceb8e18f4d000be767cf6b279928e4de41
+Merge: 9240cd5 20dbef1
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 23:28:20 2017 -0500
+
+    Merge branch 'master' of https://github.com/Paprika69/cs329e-idb
+    commit pull
+
+commit 9240cd596cdb730888892db773129c4f3ae8f6e2
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 23:24:56 2017 -0500
+
+    about page
+
+commit 20dbef1750080b2d419513e37e583193330e94ee
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Wed Oct 25 23:14:20 2017 -0500
+
+    6
+
+commit 111bf6be9d7f4f231f525ba81363831d2e9910b4
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Wed Oct 25 23:09:17 2017 -0500
+
+    6
+
+commit e11c09e9f02e199f2be272ef8293d5d2c9e8dcf6
+Merge: f7f0d8b 2b7bee2
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Wed Oct 25 23:05:30 2017 -0500
+
+    Merge branch 'master' of https://github.com/Paprika69/cs329e-idb
+
+commit 2b7bee2135065cc7dd5ec5d02d3ad41a62c504d6
+Merge: 3c8542c f6818f8
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Wed Oct 25 23:00:27 2017 -0500
+
+    Merge branch 'master' of https://github.com/Paprika69/cs329e-idb
+    [KX-1025 git pull successfully and hope works]
+
+commit f7f0d8bc47b23a3f30b250c813cb19b4d847ae1f
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Wed Oct 25 22:49:18 2017 -0500
+
+    5
+
+commit f6818f8c04eef89d3a49a7b47576d6abebb1a1da
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Wed Oct 25 22:43:23 2017 -0500
+
+    Create .gitignore
+
+commit 4f2e8628cbc5a7f0659ebbb20c9f0921cc0a0222
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Wed Oct 25 22:37:00 2017 -0500
+
+    Delete test.db
+
+commit 3c8542c8751534a2a249b874716f0ea4f969e392
+Author: Kaijuan <xingkj@utexas.edu>
+Date:   Wed Oct 25 22:36:54 2017 -0500
+
+    [KX-1025 make changes for css files]
+
+commit 5224a568527a39ae7e0ebf5f2996e444a346eaad
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 22:33:31 2017 -0500
+
+    books sort
+
+commit f6575397a251f8001f59c29ac3aafced4042ceca
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 22:09:18 2017 -0500
+
+    add hyperlink
+
+commit a5a16c40ccd4acce53933d57e01108b67216f881
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 21:54:39 2017 -0500
+
+    remove html
+
+commit c0d44efdc739cc6ccfdfbcbf442e7fa5ed49efc6
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 21:49:56 2017 -0500
+
+    0949
+
+commit 471bedbd801e2fd2aa815bcc16eca286f6c939a0
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 21:19:57 2017 -0500
+
+    splash page
+
+commit 1624d76f4166a8657797d088139454a94a849b7d
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 21:11:53 2017 -0500
+
+    header and foot
+
+commit 40363ddd169fb262ee4a9682044723380a0c3eeb
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 17:50:15 2017 -0500
+
+    foot and navigation
+
+commit db4f6b2fbeadb13a1fcd8ab2b045aa1a83cf221d
+Author: xin su <x.su@utexas.edu>
+Date:   Wed Oct 25 16:41:20 2017 -0500
+
+    aboutpage
+
+commit a7599692e6cf280eccdfd5d4190f91f45a0bd0c1
+Author: xin su <x.su@utexas.edu>
+Date:   Tue Oct 24 22:01:45 2017 -0500
+
+    new interface
+
+commit c40507891ab8732a049cec662a7c32c726b3e3bd
+Author: xin su <x.su@utexas.edu>
+Date:   Tue Oct 24 10:38:33 2017 -0500
+
+    update style
+
+commit aa7e7e6acc7fc1f69bdd6a56f639ce83558deaa5
+Author: xin su <x.su@utexas.edu>
+Date:   Mon Oct 23 22:51:49 2017 -0500
+
+    update
+
+commit 6771fbad02e260d1311df43d8297c296b8ff3af3
+Author: xin su <x.su@utexas.edu>
+Date:   Mon Oct 23 21:58:23 2017 -0500
+
+    home page and book page
+
+commit d695568ef8724251a1ec611ab1c71fc48caee930
+Author: xin su <x.su@utexas.edu>
+Date:   Mon Oct 23 20:55:29 2017 -0500
+
+    new index
+
+commit b6bf12d1acdf644ab837f4d34f402fd17df70fe9
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 17:31:46 2017 -0500
+
+    4
+
+commit 0c7968cc0b735001147d4db3ff1ade72dde759f8
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:47:05 2017 -0500
+
+    3
+
+commit dbe0b0d465f23a3533bd47ac0b9f859db8cc26fc
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:42:22 2017 -0500
+
+    3
+
+commit 1fb774ca069d70641640b441ca2ca34bdbc9dada
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:39:57 2017 -0500
+
+    3
+
+commit 0ea795a6c8d18dedd7dbd7a61eb57ab6439fa0c5
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:39:26 2017 -0500
+
+    3
+
+commit 3f7bb14bbbf00fe08b41e55d37bb657428fe96ed
+Merge: c26b78d d8fa0c9
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:37:50 2017 -0500
+
+    Merge branch 'master' of github.com:Paprika69/cs329e-idb
+
+commit c26b78dfe9430916142daa4dce356e4d707061a8
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:35:05 2017 -0500
+
+    3
+
+commit d8fa0c97ef6a4c454a9cc8b8fc853ae5312f3a2b
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Mon Oct 23 16:25:08 2017 -0500
+
+    Update requirements.txt
+
+commit ec49a814c6721e00c87174c207d1647258f4c0d4
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 16:23:32 2017 -0500
+
+    3
+
+commit 9eba2e479ddb979e1f1de30f52508692082c826f
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 13:22:02 2017 -0500
+
+    2
+
+commit 76f786f828e2a256109084f29499ebf519134eeb
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 13:00:26 2017 -0500
+
+    2
+
+commit 27759121396e007a85083d8ba3edb4272fd1e640
+Author: zhoushengke123 <zhoushengke123@gmail.com>
+Date:   Mon Oct 23 12:04:40 2017 -0500
+
+    1
+
+commit 23ef1b05c7beb44c87e2aefa1cf84f87630bdfc8
+Author: xin su <x.su@utexas.edu>
+Date:   Sat Oct 21 17:08:09 2017 -0500
+
+    html upload
+
+commit 397e841c13b8e8e2e30389d377ea6beecbe3f0a2
+Author: xin su <x.su@utexas.edu>
+Date:   Sat Oct 21 17:07:08 2017 -0500
+
+    static upload
+
+commit 83200f330c98c438726011408e7b961152ee50e0
+Author: cs329yangzhong <31517298+cs329yangzhong@users.noreply.github.com>
+Date:   Sat Oct 21 14:34:23 2017 -0500
+
+    Create app.yaml
+
+commit e2d0cbe057ca7f67fc505d94c2ba3b92c9f56879
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:54:58 2017 -0500
+
+    Update README.md
+
+commit 979e77a4ae15bf56552a7cd02ebfb89c8dd05263
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:50:28 2017 -0500
+
+    Create foo.txt
+
+commit eb3d2a404822b8db6c50935fed3f9921122a8a20
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:36:29 2017 -0500
+
+    Update and rename setup.py to config.py
+
+commit 417ab6b55ba890bca4a7ab33dd1dbc775b4be6ca
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:32:00 2017 -0500
+
+    Create requirements.txt
+
+commit f9b63aa03de934ddbea69be1d47bc298aa2ffe8e
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:30:06 2017 -0500
+
+    Create foo.txt
+
+commit 33f72ee62b962fa3915af1afb1418b8bc6822e54
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:28:21 2017 -0500
+
+    Create setup.py
+
+commit 31ccbeb6cd488cef66e42cac10d99c8615c8660e
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 13:04:09 2017 -0500
+
+    Create __init__.py
+
+commit 3aed17ebf0a04951b99d3a9d5f6ba7af73099738
+Author: Paprika69 <joyjiang@utexas.edu>
+Date:   Thu Oct 19 12:58:52 2017 -0500
+
+    Initial commit
